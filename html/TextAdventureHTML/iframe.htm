@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+<style>
+
+iframe
+{
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.button{
+color: white;
+background-color: black;
+font-family: "MedievalSharp", serif;
+border-radius: 8px;
+font-size: 20px;
+}
+.container
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 70%;
+left: 45%;
+}
+</style>
+
+</head>
+
+<body>
+
+<audio id ="background-music" loop muted>
+ <source src="atmosphere-dark-fantasy.mp3" type="audio/mpeg">
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+
+<iframe id="game-frame" src="Start_screen.htm"></iframe>
+
+<div class = "container">
+<button class="button unmute-button" onclick="playMusic()">Play Music</button>
+</div>
+
+<script>
+   function playMusic() {
+    var audio = document.getElementById('background-music');
+    audio.muted = false;
+    audio.play();  // Play the audio when the button is clicked
+    document.querySelector('.unmute-button').style.display = 'none';  // Hide the button after playing
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    
+<style>
+
+.medievalsharp-regular {
+font-family: "MedievalSharp", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h1 
+{
+font-family: "MedievalSharp", serif;
+font-size: 40px;
+color: #d0d0e1;
+text-align: center;
+
+}
+
+.button
+{
+color: white;
+background-color: black;
+font-family: "MedievalSharp", serif;
+font-size: 25px;
+width: 200px;
+height: 100px;
+border-radius: 8px;
+
+}
+
+.container 
+{
+display: flex;
+justify-content: space-around;
+}
+
+
+p
+{
+font-size: 20px;
+font-family: "MedievalSharp", serif;
+}
+
+body{
+background-color: #14141f;
+}
+
+.half-page-image {
+  width: 100%;
+  height: 55vh; /* Half of the viewport height */
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: -1;
+}
+
+.half-page-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales proportionally */
+}
+
+.main-content {
+  margin-top: 35vh; /* Push the content below the half-page image */
+  padding: 50px; /* Add some spacing around the text */
+  color: white; /* Make text readable against the background */
+}
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent any scrolling */
+}
+</style>
+</head>
+
+<body>
+
+<h1>Right Door</h1>
+
+
+<div class="half-page-image">
+  <img src="Images/Dungeon_background_cartoon_7.jpg" alt="Dungeon Image">
+</div>
+
+<div class="main-content">
+
+<p>You open the door emitting the sounds of an animal. As you walk in you see a dog chained to a wall. When the dog notices you he starts to snarl and snap at you. Scared you take a step back, and bump into the wall. Suddenly you remember the bone in your pocket, and quickly take it out. The dog seeing the treat suddenly sits, and his tongue lolls out of his mouth. You offer the bone to the dog.
+</p>
+<div class= "container">
+	<form action = "Unlock_dogs_chain.htm">
+	<button class="button button1">Unlocks the Dogs chain</button>
+</form>
+	<form action = "Walk_toward_hallway_daytime.htm">
+	<button class="button button2">Go back to the hallway</button>
+</form>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
+

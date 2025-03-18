@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    
+<style>
+
+.medievalsharp-regular {
+font-family: "MedievalSharp", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h1 
+{
+font-family: "MedievalSharp", serif;
+font-size: 40px;
+color: #d0d0e1;
+text-align: center;
+
+}
+
+.button
+{
+color: white;
+background-color: black;
+font-family: "MedievalSharp", serif;
+font-size: 25px;
+width: 200px;
+height: 100px;
+border-radius: 8px;
+
+}
+
+.container 
+{
+display: flex;
+justify-content: space-around;
+}
+
+
+p
+{
+font-size: 20px;
+font-family: "MedievalSharp", serif;
+}
+
+body{
+background-color: #14141f;
+}
+
+.half-page-image {
+  width: 100%;
+  height: 55vh; /* Half of the viewport height */
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: -1;
+}
+
+.half-page-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales proportionally */
+}
+
+.main-content {
+  margin-top: 35vh; /* Push the content below the half-page image */
+  padding: 50px; 
+  color: white; 
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; 
+}
+</style>
+</head>
+
+<body>
+
+<h1>You wake up stronger</h1>
+
+
+<div class="half-page-image">
+  <img src="Images/dungeon_background_2.png" alt="Dungeon Image">
+</div>
+
+<div class="main-content">
+
+<p>You choose to go back to sleep. When you awaken the light under the door has grown darker, and when you walk towards the door you kick a bowl of something that seems edible. When you turn the handle you find that it is unlocked. Before you is a barely lit hallway.</p>
+<div class= "container">
+	<form action = "Walk_toward_hallway.htm">
+	<button class="button button1">Walk torward the barely lit hallway</button>
+</form>
+	<form action = "Go_back_to_sleep_again.htm">
+	<button class="button button2">Go back to sleep again</button>
+</form>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
+

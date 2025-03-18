@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    
+<style>
+
+.medievalsharp-regular {
+font-family: "MedievalSharp", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h1 
+{
+font-family: "MedievalSharp", serif;
+font-size: 40px;
+color: #d0d0e1;
+text-align: center;
+
+}
+
+.button
+{
+color: white;
+background-color: black;
+font-family: "MedievalSharp", serif;
+font-size: 25px;
+width: 200px;
+height: 100px;
+border-radius: 8px;
+
+}
+
+.container 
+{
+display: flex;
+justify-content: space-around;
+}
+
+
+p
+{
+font-size: 20px;
+font-family: "MedievalSharp", serif;
+}
+
+body{
+background-color: #14141f;
+}
+
+.half-page-image {
+  width: 100%;
+  height: 55vh; /* Half of the viewport height */
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: -1;
+}
+
+.half-page-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales proportionally */
+}
+
+.main-content {
+  margin-top: 35vh; /* Push the content below the half-page image */
+  padding: 50px; /* Add some spacing around the text */
+  color: white; /* Make text readable against the background */
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Search Library</h1>
+
+
+<div class="half-page-image">
+  <img src="Images/library4.jpg" alt="Library Image">
+</div>
+
+<div class="main-content">
+
+<p>As you wander the library you find yourself tucked into a small corner near the back. You find your eyes drawn to the beautiful gold foiling and leather bound tomes. You feel a call to reach out to grab a particularly beautiful volume with the title “Darkest Before”. As you attempt to pull the book off the shelf you hear a clunk and the shelf swings inwards to a dark tunnel.
+
+</p>
+<div class= "container">
+	<form action = "Walk_toward_hallway_daytime.htm">
+	<button class="button button1">Turn around and leave the library</button>
+</form>
+	<form action = "Enter_the_dark_tunnel.htm">
+	<button class="button button2">Enter the dark tunnel</button>
+</form>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
+
